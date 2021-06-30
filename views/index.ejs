@@ -1,0 +1,943 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            margin: 50px auto;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap');
+
+        body {
+            font-family: "Montserrat";
+        }
+
+        *#title {
+            /* background-color: #ff4c68; */
+            background-color: #9acd3;
+			background-image: url('/img/0.jpg');
+			background-size:cover;
+background-position:center;
+            background-repeat: no-repeat;
+			  filter: brightness(20%)
+            color: #ffffff;
+
+        }
+
+        hr {
+            background-color: indigo;
+
+        }
+
+        h1 {
+            font-family: "Montserrat-Black";
+            font-size: 3rem;
+            line-height: 1.5;
+        }
+
+        h3 {
+            font-family: "Montserrat-Bold";
+            font-size: 1.5rem;
+        }
+
+        p {
+            color: grey;
+        }
+
+        h2 {
+            font-family: "Montserrat-Bold";
+            font-size: 3rem;
+        }
+
+        .container-fluid {
+            padding: 3% 15%;
+        }
+
+        .download-button {
+            margin: 5% 3% 5% 0%;
+        }
+
+        /* navbar */
+        .navbar:nth-child(1) {
+            padding: 0 0 4.5rem;
+        }
+
+        .navbar-brand {
+            font-family: "Ubuntu";
+            font-size: 2.0rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .nav-item {
+            padding: 0 18px;
+        }
+
+        .our_services {
+            font-family: "Montserrat-Bold";
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-link {
+            font-size: 1.2rem;
+            font-family: "Montserrat";
+        }
+
+        /* title image */
+        .title-image {
+            border-radius: 100%;
+            width: 60%;
+        }
+
+        .title-image:hover {
+            height: 300px;
+            border-radius: 30% 30% 30% 30%;
+        }
+
+        /* features section */
+        #features {
+            padding: 7% 15%;
+            margin-top: 1px;
+        }
+
+        .feature-box {
+            text-align: center;
+            padding: 5%;
+        }
+
+        /* icons */
+
+        .icon:hover {
+            color: #ff4c68;
+        }
+
+        /* testimonials */
+        #testimonials {
+            text-align: center;
+            padding: 7% 15%;
+            background-color: #ef8172;
+            color: #ffffff;
+        }
+
+        .testimonial-image {
+            border-radius: 100%;
+            width: 60%;
+        }
+
+        /* press content */
+        .press {
+            padding: 7%;
+        }
+
+        .press-items {
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            /* margin: 10px; */
+        }
+
+        div#carousel {
+            perspective: 1200px;
+            background: #100000;
+            padding: 7% 0%;
+            font-size: 0;
+            margin-bottom: 3rem;
+            overflow: hidden;
+        }
+
+        figure#spinner {
+            transform-style: preserve-3d;
+            height: 300px;
+            transform-origin: 50% 50% -500px;
+            transition: 1s;
+        }
+
+        figure#spinner img {
+            width: 40%;
+            max-width: 425px;
+            position: absolute;
+            left: 30%;
+            transform-origin: 50% 50% -500px;
+            outline: 1px solid transparent;
+        }
+
+        figure#spinner img:nth-child(1) {
+            transform: rotateY(0deg);
+        }
+
+        figure#spinner img:nth-child(2) {
+            transform: rotateY(-45deg);
+        }
+
+        figure#spinner img:nth-child(3) {
+            transform: rotateY(-90deg);
+        }
+
+        figure#spinner img:nth-child(4) {
+            transform: rotateY(-135deg);
+        }
+
+        figure#spinner img:nth-child(5) {
+            transform: rotateY(-180deg);
+        }
+
+        figure#spinner img:nth-child(6) {
+            transform: rotateY(-225deg);
+        }
+
+        figure#spinner img:nth-child(7) {
+            transform: rotateY(-270deg);
+        }
+
+        figure#spinner img:nth-child(8) {
+            transform: rotateY(-315deg);
+        }
+
+        div#carousel~span {
+            color: #fff;
+            margin: 5%;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 2rem;
+            transition: 0.6s color;
+            position: relative;
+            margin-top: -6rem;
+            border-bottom: none;
+            line-height: 0;
+        }
+
+        div#carousel~span:hover {
+            color: #888;
+            cursor: pointer;
+        }
+
+        #div {
+            margin-top: -150px;
+            padding: 7%;
+            color: #66ff99;
+            text-shadow: 0 5px 5px #000000bb;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(im.jpg);
+
+            background-repeat: no-repeat;
+            background-size: 800px 275px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            background-position: center;
+            background-color: black;
+            margin-bottom: 0px;
+        }
+
+        @media (max-width: 768px) {
+            #div {
+
+                background-size: 600px 220px;
+                padding: 10%;
+                margin-top: -5px;
+
+            }
+
+            #place {
+                margin-top: 0px;
+            }
+
+        }
+
+        @media (min-width: 769px) and (max-width: 1000px) {
+            #div {
+
+                background-size: 800px 300px;
+                padding: 12%;
+                margin-top: -30px;
+
+            }
+
+            #place {
+                margin-top: 0px;
+            }
+
+        }
+
+        #carouselExampleCaptions {
+
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 800px 350px;
+            background-position: center;
+            background-color: black;
+            color: #66ff99;
+            text-shadow: 0 5px 5px #000000bb;
+            padding-top: 20px;
+            margin-top: -50px;
+        }
+
+        #para {
+            color: #074ff7;
+        }
+
+        @media (max-width: 618px) {
+            #carouselExampleCaptions {
+                background-size: 600px 280px;
+                padding-top: 0px;
+                margin-top: -80px;
+            }
+
+        }
+
+        @media(min-width: 619px) and (max-width: 799px) {
+            #carouselExampleCaptions {
+                background-size: 600px 280px;
+                padding-top: 0px;
+                margin-top: -160px;
+            }
+
+        }
+
+        @media(min-width: 800px) and (max-width: 949px) {
+            #carouselExampleCaptions {
+                background-size: 800px 300px;
+                padding-top: 0px;
+                margin-top: -160px;
+            }
+
+        }
+
+        @media(min-width: 950px) and (max-width: 964px) {
+            #carouselExampleCaptions {
+                background-size: 800px 300px;
+                padding-top: 0px;
+                margin-top: -180px;
+            }
+
+        }
+
+        @media(min-width: 965px) and (max-width: 989px) {
+            #carouselExampleCaptions {
+                background-size: 800px 300px;
+                padding-top: 0px;
+                margin-top: -190px;
+            }
+
+        }
+
+        @media(min-width: 990px) and (max-width: 1000px) {
+            #carouselExampleCaptions {
+                background-size: 800px 300px;
+                padding-top: 0px;
+                margin-top: -195px;
+            }
+
+        }
+
+        .blogs-box {
+            margin-top: -22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /* background-image:radial-gradient(#121212,#000000); */
+            color: #ffffffdd;
+            line-height: 3em;
+            /*  padding: 17% 0% 0% 0%;*/
+        }
+
+        .blogs-animation {
+            padding: 3em 1.5em;
+            background-image: linear-gradient(45deg, #7b4397, #dc143C);
+            border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+            animation: animate 4s infinite 0.5s;
+        }
+
+        .actual-blog {
+            font-family: 'Orbitron', sans-serif;
+            color: #66ff99;
+            font-size: 56px;
+            text-align: center;
+            padding-top: 110px;
+            padding-bottom: 110px;
+
+            text-shadow: 0 5px 5px #000000bb;
+            margin-top: 0px;
+        }
+
+        @media (max-width: 1000px) {
+            .actual-blog {
+                padding-top: 40px;
+                padding-bottom: 4px;
+            }
+        }
+
+        @keyframes animate {
+            0% {
+                border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+            }
+
+            25% {
+                border-radius: 75% 25% 45% 55%/ 30% 30% 70% 70%;
+            }
+
+            50% {
+                border-radius: 61% 39% 27% 73%/ 62% 77% 23% 38%;
+            }
+
+            75% {
+                border-radius: 38% 62% 74% 26%/ 75% 25% 75% 25%;
+            }
+
+            100% {
+                border-radius: 30% 70% 70% 30%/ 30% 30% 70% 70%;
+            }
+        }
+
+        /* lost and found */
+        /* .lost_and_found { */
+        /* display: flex;
+    justify-content: center; */
+        /*   margin: 30px;
+            text-align: center;
+            padding: 3% 7%;
+            font-family: 'Sansita Swashed', cursive;
+			text-decoration: none;*/
+        /* } */
+
+        /* .typewrite { */
+        /*  font-size: 40px;
+		  	text-decoration: none;*/
+        /* } */
+
+        #camp {
+
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(0.jpg);
+            background-repeat: no-repeat;
+            background-blend-mode: darken;
+            background-size: 800px 400px;
+            background-position: center;
+            margin-top: -78px;
+        }
+
+        @media (max-width: 768px) {
+            #camp {
+                background-size: 800px 300px;
+                padding: 50px;
+            }
+        }
+
+        @media(min-width: 769px) and (max-width: 1000px) {
+            #camp {
+                background-size: 800px 300px;
+                padding: 80px;
+            }
+        }
+
+        #hhh {
+            text-decoration: none;
+            color: #66ff99;
+            text-shadow: 0 5px 5px #000000bb;
+            padding: 7%;
+        }
+
+        @media (max-width: 1000px) {
+            #hhh {
+
+                margin-top: 20%;
+                text-align: center;
+                padding-bottom: 40px;
+                padding-top: 40px;
+                padding: 10%;
+
+            }
+
+            #div {
+                margin-top: -30px;
+            }
+        }
+
+        .sidenav {
+            height: 100%;
+            /* 100% Full-height */
+            width: 0;
+            /* 0 width - change this with JavaScript */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Stay on top */
+            top: 0;
+            /* Stay at the top */
+            left: 0;
+            background-color: #111;
+            /* Black*/
+            overflow-x: hidden;
+            /* Disable horizontal scroll */
+            padding-top: 60px;
+            /* Place content 60px from the top */
+            transition: 0.5s;
+            /* 0.5 second transition effect to slide in the sidenav */
+        }
+
+        /* The navigation menu links */
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        /* Position and style the close button (top right corner) */
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+        #main {
+            transition: margin-left .5s;
+            padding: 20px;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+
+        .fa {
+            color: #fff;
+
+
+        }
+
+        #dr {
+
+
+            padding: 4px;
+            font-size: 15px;
+            width: 45px;
+            float: right;
+            margin-right: -1000px;
+            color: white;
+            display: none;
+
+        }
+
+        @media (max-width: 1100px) {
+            #dr {
+                margin-right: 0px;
+            }
+        }
+
+        #navbarTogglerDemo02 {
+            font-size: 20px;
+            justify-content: space-around;
+            margin-right: 20px;
+            padding-left: 3%;
+
+
+        }
+
+        #space {
+            margin-right: 3px;
+        }
+
+        @media(max-width: 992px) {
+            #listt {
+                display: none;
+            }
+        }
+
+        @media (max-width: 991px) {
+
+            #dr {
+                display: block;
+            }
+
+        }
+    @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+/* *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+} */
+.cards-body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #ebf5fc;
+} 
+.cards{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1200px;
+	flex-wrap: wrap;
+	padding: 40px 0;
+}
+.cards .card{
+	position: relative;
+	width: 320px;
+	height: 440px;
+	box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+				inset -5px -5px 5px rgba(255,255,255,0.5),
+				5px 5px 5px rgba(0,0,0,0.05),
+				-5px -5px 5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 30px;
+}
+.cards .card .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #ebf5fc;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.cards .card:hover .box{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    background: linear-gradient(45deg,#b95ce4,#4f29cd);
+}
+.cards .card .box .content{
+    padding: 20px;
+    text-align: center;  
+}
+.cards .card .box .content h2{
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(0,0,0,0.02);
+    transition: 0.5s ;
+    pointer-events: none;
+}
+.cards .card:hover .box .content h2{
+    color: rgba(0,0,0,0.09);
+}
+.cards .card:hover .box .content h3{
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+    transition: 0.5s;
+} 
+.cards .card .box .content p{
+    font-size: 1em;
+    font-weight: 300;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+.cards .card:hover .box .content p{
+    color:#fff;
+}
+.cards .card .box .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #03a9f4;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(2, 0, 0, 0.2);
+}
+.cards .card:hover .box .content a{
+    background: #ff568f;
+}
+</style>
+    </style>
+    <script src="https://use.fontawesome.com/180bbea00e.js"></script>
+    <title>Mailer Daemon</title>
+</head>
+
+
+<body>
+    <section id="title">
+        <div class="container-fluid" style="padding-bottom: 40px;">
+
+        </div>
+        <div class="container-fluid" style="height: 300px;margin-top: 40px;padding-right: 0%;margin-right: 0%;">
+            <!-- navbar -->
+            <%- include('partials/navbar'); %>
+
+            <!-- title -->
+            <div class="row container">
+                <div class="col-lg-12">
+                    <div class="my_writer">
+                        <h1>
+                            <a href="" class="typewrite" data-period="2000"
+                                data-type='[ "Welcome, to Mailer Daemon.", "Media Body of IIT(ISM) Dhanbad" ]'
+                                style="color:white;">
+                                <span class="wrap"></span>
+                            </a>
+                        </h1>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <!-- features -->
+    <section id="features">
+        <div class="row our_services">
+            <u>
+                <h2 style="display: flex;justify-content: center;text-align: center;">Hashtags We Cover</h2>
+            </u>
+        </div>
+        <!-- <div class="row">
+            <div class="feature-box col-lg-4">
+                <i class="fa fa-check-circle fa-4x icon" aria-hidden="true" style="color:#ef8172;margin: 1rem;"></i>
+                <h3>Placement Daemon</h3>
+                <p>Everything, you wonna know about the placements.</p>
+            </div>
+            <div class="feature-box col-lg-4">
+                <i class="fa fa-bullseye fa-4x icon" aria-hidden="true" style="color:#ef8172;margin: 1rem;"></i>
+                <h3>Lost and Found</h3>
+                <p>You have lost something in the campus,chill, we are there for u.</p>
+            </div>
+            <div class="feature-box col-lg-4">
+                <i class="fa fa-heart fa-4x icon" aria-hidden="true" style="color:#ef8172; margin: 1rem;"></i>
+                <h3>Campus Daemon</h3>
+                <p>Wonna sneak into the campus news?</p>
+            </div>
+        </div> -->
+    </section>
+
+    <div class="cards-body">
+        <div class="cards">
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <h2>01</h2>
+                        <h3>Placement Daemon</h3>
+                        <p>Reports on the hiring activities on and off the campus related to placements, internships and intern to PPO conversions. Check this out to keep a tab on “who’s going where.”</p>
+                        <a href="/placement">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <h2>02</h2>
+                        <h3>Lost And Found</h3>
+                        <p>The campus-wide item reporting and recollection hub of the institute. Check this channel out if you either lost something or found something.</p>
+                           
+                        <a href="/found">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <h2>03</h2>
+                        <h3>Campus Daemon</h3>
+                        <p>Reports on the activities inside the domains of the institute. This includes technical, cultural and sports events besides the notices published by the administration and others.
+Check this hashtag for comprehensive, accurate, and up-to-date knowledge of the happenings in the college.
+</p>
+						<a href="/campus">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <h2>04</h2>
+                        <h3>Capturado Daemon</h3>
+                        <p>Covers all the videographic activities of Mailer Daemon like the interview releases, fresher’s video and others. Check this hashtag for wholesome and informative videos themed around the college.</p>
+                        <a href="/Capturado">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <h2>05</h2>
+                        <h3>Penned Daemon</h3>
+                        <p>Covers free-minded editorials and ideas on the burning topics. Keep a check on this hashtag if you value the quality of prose and an insistent, moving and exciting take on the issues at hand</p>
+                        <a href="/penned">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <h2>06</h2>
+                        <h3>BC Daemon</h3>
+                        <p>The official humour channel of Mailer Daemon. Check this out for plain witticism and amusing commentary.</p>
+                        <a href="/BC">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        var angle = 0;
+        function galleryspin(sign) {
+            spinner = document.querySelector("#spinner");
+            if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+            spinner.setAttribute("style", "-webkit-transform: rotateY(" + angle + "deg); -moz-transform: rotateY(" + angle + "deg); transform: rotateY(" + angle + "deg);");
+        }
+
+        var TxtType = function (el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtType.prototype.tick = function () {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+            var that = this;
+            var delta = 200 - Math.random() * 100;
+
+            if (this.isDeleting) { delta /= 2; }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function () {
+                that.tick();
+            }, delta);
+        };
+
+        window.onload = function () {
+            var elements = document.getElementsByClassName('typewrite');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-type');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtType(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+            document.body.appendChild(css);
+        };
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+</body>
+<footer>
+    <hr>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="Contact-Us">
+        <a class="navbar-brand" href="#">Contact Us</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="https://www.facebook.com/MDiitism/?__xts__[0]=68.ARCHcGPhUIaM6dOH49sbEiT-B"><i
+                            class="fa fa-facebook" aria-hidden="true"></i> Facebook</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/md_iit_dhanbad/"><i class="fa fa-instagram"
+                            aria-hidden="true"></i> Instagram</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/company/mailer-daemon/?originalSubdomain=in"><i
+                            class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/channel/UCrcdJ3AGxugb7X2k5uadBFg"><i
+                            class="fa fa-youtube" aria-hidden="true"></i> Youtube</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+
+</html>

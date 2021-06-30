@@ -1,0 +1,957 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		
+		 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+		 <script src="https://kit.fontawesome.com/a076d05399.js"></script>-->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial;
+      padding: 20px;
+      background: #9acd32;
+    }
+
+
+    .header {
+      padding: 8px;
+      font-size: 25px;
+      width: 25%;
+      margin-left: 35%;
+      box-shadow: 5px 10px 8px 10px #888888;
+
+      text-align: center;
+    }
+
+
+
+    .leftcolumn {
+      float: left;
+      margin-left: 10%;
+      width: 75%;
+    }
+
+
+
+
+
+    .fakeimg {
+      background-color: #fff;
+      width: 100%;
+      padding: 20px;
+      margin-bottom: 90px;
+    }
+
+
+    .card {
+      background-color: #faa550;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    #input1 {
+      width: 50px;
+      border: none;
+      background: none;
+      pointer-events: none;
+
+    }
+
+    button {
+      font-size: 20px;
+      margin-top: 10px;
+      background-color: grey;
+
+    }
+
+    @media screen and (max-width: 800px) {
+      .leftcolumn {
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+      }
+
+      .header {
+        width: 100%;
+        margin-left: 0;
+
+      }
+    }
+
+    *#title {
+      /* background-color: #ff4c68; */
+      /*  background-color: #9acd32;  */
+      height: 30px;
+
+    }
+
+    .container-fluid {
+      padding: 3% 15%;
+    }
+
+    .download-button {
+      margin: 7% 5% 7% 0%;
+    }
+
+    /* navbar */
+    .navbar:nth-child(1) {
+      padding: 0 0 4.5rem;
+    }
+
+    .navbar-brand {
+      font-family: "Ubuntu";
+      font-size: 2.8rem;
+      font-weight: bold;
+
+
+
+      color: #ffffff;
+    }
+
+    .nav-item {
+      padding: 0 18px;
+    }
+
+    .our_services {
+      font-family: "Montserrat-Bold";
+      font-size: 2.5rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .nav-link {
+      font-size: 1.9rem;
+      font-family: "Montserrat";
+    }
+
+    /* title image */
+    .title-image {
+      border-radius: 100%;
+      width: 40%;
+      float: left;
+      margin-right: 5px;
+    }
+
+    .title-image:hover {
+      height: 300px;
+      border-radius: 30% 30% 30% 30%;
+    }
+
+    #h {
+      margin-left: 60px;
+      margin-top: -38px;
+
+    }
+
+    #tog {
+      float: right;
+    }
+
+
+
+
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      color: white;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .content1 {
+
+      margin: 130px auto;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .content1 .text {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #202020;
+    }
+
+    .content1 .p {
+      font-size: 20px;
+      font-weight: 600;
+      color: #202020;
+    }
+
+    footer {
+      margin-top: 10px;
+      margin-bottom: -20px;
+      width: 103%;
+      background: #faa550;
+      margin-left: -18px;
+    }
+
+    .main-content {
+      display: flex;
+    }
+
+    .main-content .box {
+      flex-basis: 50%;
+      padding: 10px 20px;
+    }
+
+    .box h2 {
+      font-size: 10px;
+
+      text-transform: uppercase;
+    }
+
+    .box .content {
+      margin: 20px 0 0 0;
+      position: relative;
+    }
+
+    .box .content:before {
+      position: absolute;
+      content: '';
+      top: -10px;
+      height: 2px;
+      width: 100%;
+      background: #1a1a1a;
+    }
+
+    .box .content:after {
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: 15%;
+      background: #f12020;
+      top: -10px;
+    }
+
+    .left .content p {
+      text-align: justify;
+    }
+
+    .left .content .social {
+      margin: 20px 0 0 0;
+    }
+
+    .left .content .social a {
+      padding: 0 2px;
+    }
+
+    .left .content .social a span {
+      height: 40px;
+      width: 40px;
+      background: #5f90a3;
+      line-height: 40px;
+      text-align: center;
+      font-size: 18px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .left .content .social a span:hover {
+      background: #f12020;
+    }
+
+    .center .content .fas {
+      font-size: 1.4375rem;
+      background: #9ded91;
+      height: 45px;
+      width: 45px;
+      line-height: 45px;
+      text-align: center;
+      border-radius: 50%;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .center .content .fas:hover {
+      background: #f12020;
+    }
+
+    .center .content .text {
+      font-size: 1.0625rem;
+      font-weight: 500;
+      padding-left: 10px;
+    }
+
+    .center .content .phone {
+      margin: 15px 0;
+    }
+
+    .right form .text {
+      font-size: 1.0625rem;
+      margin-bottom: 2px;
+      color: #656565;
+    }
+
+    .right form .msg {
+      margin-top: 10px;
+    }
+
+    .right form input,
+    .right form textarea {
+      width: 100%;
+      font-size: 1.0625rem;
+      background: #695a59;
+      padding-left: 10px;
+      border: 1px solid #222222;
+    }
+
+    .right form input:focus,
+    .right form textarea:focus {
+      outline-color: #3498db;
+    }
+
+    .right form input {
+      height: 35px;
+    }
+
+    .right form .btn {
+      margin-top: 10px;
+    }
+
+    .right form .btn button {
+      height: 40px;
+      width: 100%;
+      border: none;
+      outline: none;
+      background: #9ded91;
+      font-size: 1.0625rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: .3s;
+    }
+
+    .right form .btn button:hover {
+      background: #000;
+    }
+
+    @media (max-width: 900px) {
+      footer {
+        position: relative;
+        bottom: 0px;
+        width: 110%;
+        margin-left: -30px;
+      }
+
+      .main-content {
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+
+      .main-content .box {
+        margin: 5px 0;
+      }
+    }
+
+    /*updated blog css*/
+    #mbox {
+      width: 100%;
+      margin: 30px auto;
+      background: white;
+      border-radius: 5px;
+      box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+      padding-top: 10px;
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #F1F1F1;
+    }
+
+    .mabox {
+      width: 20%;
+      margin: 30px auto;
+      margin-bottom: 0;
+      background: white;
+      border-radius: 5px;
+      box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    }
+
+    #mheading {
+      font-family: serif;
+      font-weight: bold;
+      background-color: #faa550;
+      text-align: center;
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+    }
+
+    #mblog {
+      text-align: center;
+    }
+
+    #mblog label {
+      font-family: monospace;
+      color: #faa550;
+      font-size: 17px;
+      float: left;
+    }
+
+    textarea[type="text"],
+    input[type="text"] {
+      font-family: Lucida Console;
+      font-size: 13px;
+      border: 1px solid #faa550;
+      border-radius: 10px;
+      padding: 10px;
+      display: inline-block;
+      border-radius: 4px;
+      box-sizing: border-box;
+      width: 100%;
+      color: #000000;
+    }
+
+    textarea[type="text"]:focus,
+    input[type="text"]:focus {
+      outline: none !important;
+    }
+
+    .post {
+      margin-bottom: 10px;
+      width: 130px;
+      font-weight: bolder;
+      margin-top: 15px;
+      font-size: 17px;
+      background-color: #faa550;
+      padding: 7px;
+      padding-left: 20px;
+      border: none;
+      padding-right: 20px;
+      border-radius: 15px;
+      box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    }
+
+    .post:hover {
+      background-color: rgb(250, 140, 80);
+    }
+
+    hr.light {
+      border-top: 2px solid #000;
+      width: 100%;
+      padding-bottom: 1rem;
+    }
+
+    #likes {
+      margin: 0 auto;
+    }
+
+    #likebtn {
+      background-color: white;
+      color: #000;
+      border: none;
+      outline: none;
+      margin: 0 auto;
+      float: right;
+    }
+
+    #likebtn:active {
+      outline: none;
+      border: none;
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    .far {
+      font-size: 20px;
+      margin: 0 auto;
+      padding: 0 auto;
+      cursor: pointer;
+      user-select: none;
+      color: #000;
+    }
+
+    .fa {
+      color: #fff;
+      margin: 0 auto;
+      padding: 0 auto;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .border-heart {
+      color: #000;
+    }
+
+    .selected-heart {
+      color: red;
+    }
+
+    .far:hover {
+      color: red;
+    }
+
+    .pAn:hover .fa-chevron-left:before {
+      content: "\f137";
+    }
+
+    .pAn:hover .fa-chevron-right:before {
+      content: "\f138";
+    }
+
+    .pAn {
+      text-align: center;
+      width: 100%;
+    }
+
+    .pAn i {
+      font-size: 40px;
+    }
+
+    #name_date {
+      color: #000;
+      text-align: left;
+      font-size: 13px;
+    }
+
+    #mtitle {
+      font-size: 17px;
+      font-weight: bold;
+      text-align: left;
+      color: #000;
+    }
+
+    #mcontent {
+      font-size: 13px;
+      color: #000;
+      text-align: left;
+    }
+
+    #likes {
+      float: left;
+      color: #000;
+      font-size: 11px;
+      padding: 10px;
+    }
+
+    /*tablets*/
+    @media (max-width: 768px) {
+      hr.light {
+        padding-bottom: 0.1rem;
+      }
+
+      #complete {
+        padding-right: 2px;
+        padding-left: 2px;
+      }
+
+      #mcomplete {
+        padding-right: 36px;
+        padding-left: 36px;
+      }
+
+      #mpost {
+        width: 90px;
+        font-size: 16px;
+      }
+
+      #mheading h1 {
+        font-size: 20px;
+      }
+
+      #mbox {
+        width: 85%;
+      }
+
+      .mabox {
+        width: 30%;
+      }
+
+      #mheading {
+        padding-top: 0.9%;
+        padding-bottom: 0.9%;
+      }
+
+      .pAn i {
+        font-size: 30px;
+        text-align: center;
+      }
+    }
+
+    /*mobile*/
+    @media (max-width: 576px) {
+      #complete {
+        padding-right: 2px;
+        padding-left: 2px;
+      }
+
+      #mcomplete {
+        padding-right: 32px;
+        padding-left: 32px;
+      }
+
+      #mheading h1 {
+        font-size: 20px;
+      }
+
+      #mbox {
+        width: 100%;
+      }
+
+      .mabox {
+        width: 30%;
+      }
+
+      #mheading {
+        padding-top: 0.9%;
+        padding-bottom: 0.9%;
+      }
+
+      hr.light {
+        padding-bottom: 0.2rem;
+      }
+
+      .like_c {
+        padding-bottom: 2px;
+      }
+
+      .far,
+      .selected-heart {
+        font-size: 15px;
+      }
+
+      .pAn {
+        text-align: center;
+        width: 100%;
+        padding-left: 7px;
+        padding-right: 7px;
+      }
+
+      .pAn i {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      #name_date {
+        font-size: 10px;
+      }
+
+      #mtitle {
+        font-size: 15px;
+      }
+
+      #mcontent {
+        font-size: 11px;
+      }
+
+      #likes {
+        font-size: 10px;
+        padding: 10px;
+      }
+    }
+
+
+
+    .sidenav {
+      height: 100%;
+      /* 100% Full-height */
+      width: 0;
+      /* 0 width - change this with JavaScript */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Stay on top */
+      top: 0;
+      /* Stay at the top */
+      left: 0;
+      background-color: #111;
+      /* Black*/
+      overflow-x: hidden;
+      /* Disable horizontal scroll */
+      padding-top: 60px;
+      /* Place content 60px from the top */
+      transition: 0.5s;
+      /* 0.5 second transition effect to slide in the sidenav */
+    }
+
+    /* The navigation menu links */
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+      transition: margin-left .5s;
+      padding: 20px;
+    }
+
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+
+
+    .fa fa-bars {
+      background-color: black;
+      color: black;
+    }
+
+    .btn btn-lg my-2 my-lg-0 download-button {
+      background-color: green;
+      padding: 5px;
+      color: black;
+      margin-right: -800px;
+
+    }
+
+    #dr {
+      padding: 5px;
+      margin-right: -1000px;
+      z-index: 1;
+      color: black;
+
+      display: none;
+
+    }
+
+    @media (max-width: 1000px) {
+      #dr {
+        margin-right: 0px;
+      }
+    }
+
+
+    #navbarTogglerDemo02 {
+      font-size: 20px;
+      justify-content: space-around;
+      margin-right: 20px;
+      padding-left: 3%;
+
+
+    }
+
+    #space {
+      margin-right: 3px;
+    }
+
+    @media (max-width: 950px) {
+      #navbarTogglerDemo02 {
+        display: none;
+
+      }
+
+      #dr {
+        display: block;
+      }
+
+    }
+	
+	
+	@media (max-width: 990px)
+{
+#uu {
+display: none;
+
+}
+}
+  </style>
+</head>
+
+<body>
+  <section id="title">
+    <!-- <div class="container-fluid" style="padding-bottom: 40px;">
+
+        </div>-->
+    <!--  <div class="container-fluid" style="height: 300px;margin-top: 40px;padding-right: 0%;margin-right: 0%;">--->
+    <!-- navbar -->
+    <%- include('partials/navbar'); %>
+
+    <!-- title -->
+
+
+
+  </section>
+
+  <div class="mabox" id="mheading">
+    <h1> Campus Daemon </h1>
+  </div>
+  <div class="container-fluid" id="complete">
+    <div class="row align-items-center">
+      <div class="col-1 pAn">
+        <i class="fa fa-chevron-left"></i>
+      </div>
+      <div class="col-10">
+        <div id="mbox">
+          <div class="container-fluid" id="mcomplete">
+            <div id="mblog">
+              <div class="row">
+                <div class="col-12">
+                  <p id="name_date">Dec 31,2020 </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <h2 id="mtitle"> Online Inductions </h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <p id="mcontent"> The final phase of online cultural club inductions 'Parichay' was completed on 30th December via Zoom platform to
+                  introduce the freshers to the cultural clubs of the Institute. Day 4 witnessed events from Mailer Daemon, Udaan (Career
+                  Club), Book Club and Kartavya. It was coordinated by Shubhagyta Swaraj, Media and Cultural Representative — Student's
+                  Gymkhana, and assisted by Kotapatti Siddharth, Vysakh, and Shaurya.
+                  The online induction program of Mailer Daemon started at 6:15 pm. Shri Prakash Bajpai addressed the attendees on behalf
+                  of the club. Sachin Roy shared the insights and the functioning of Mailer Daemon with a brief introduction of hashtags
+                  used by the team. Its achievements were shared among the freshers and the recruitment process was also explained.
+                  Malvika explained the functionality of the MD app and attendance tracker. A Quiz Poll was conducted to engage the
+                  attendees. More than 180+ students joined the meet. The meeting concluded at 6:55 pm.
+                  The online induction program of Udaan started at 7:05 pm. Animesh Saurav addressed the attendees on behalf of Udaan and
+                  shared the insights of the club. Gupteshwara Padhy elaborated on the live sessions, intern stories, and alumni
+                  interviews that were conducted by the club. Nikhil Kushwah and Thakur Ashutosh Suman shared their experiences in
+                  “Udaan”. An announcement of their upcoming online event “Ask your seniors” was made. More than 130+ attendees joined the
+                  meet. The meeting concluded at 7:30 pm.
+                  The online induction of Book Club started at 7:35 pm. Moaz Aktar addressed the attendees on behalf of the book club.
+                  Mihir Jichkar shared the insights of the book club and mentioned the reasons for which one should join the club. A Pop
+                  quiz was also conducted, whose winners and prizes will be announced later on their official page. Another task of
+                  writing a “Book Review” was given with a deadline of January 10. The meeting concluded at 8:00 pm.
+                  The next and final induction was held by the NGO, ‘Kartavya’. The meeting started at 8:00 pm. The freshers were
+                  explained a brief history of the NGO and its founder IPS Mr. Amresh Mishra. Work performed by different teams of
+                  Kartavya was elaborated. The session ended in about 40 minutes with a brief Q&A session. </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <hr class="light">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-8 like_c">
+                  <p id="likes">43 likes</p>
+                </div>
+                <div class="col-4 like_c">
+                  <button id="likebtn"><i class="far fa-heart border-heart" onclick="like(this)"></i></button>
+
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-1 pAn">
+        <i class="fa fa-chevron-right" style="float: right;"></i>
+      </div>
+    </div>
+  </div>
+
+  <!--button id="likebtn" this.onclick=null>
+<i class="fa fa-thumbs-up" ></i>
+</button-->
+
+  <script> var l = false;
+    $('#likebtn').on('click', function () {
+      l = !l;
+      if (l) {
+        document.getElementById("likes").innerHTML = "44 likes";
+      }
+      else {
+        document.getElementById("likes").innerHTML = "43 likes";
+      }
+      $(this).find("i").toggleClass("far fas selected-heart border-heart");
+    });
+/*let likebtn= document.querySelector('#likebtn');
+    let input1= document.querySelector('#input1');
+    likebtn.addEventListener('click',function ram(){
+    input1.value=parseInt(input1.value)+1;
+    input1.style.color="#e37259";
+    input1.style.fontSize="20px"
+    likebtn.removeEventListener('click',ram);
+    
+    
+    }) */
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+
+
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      document.body.style.backgroundColor = "white";
+    }
+  </script>
+
+</body>
+
+
+</html>

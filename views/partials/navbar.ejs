@@ -1,0 +1,73 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-2" style="background-color:#F4A460">
+    <a class="navbar-brand" href="#" style="line-height: 3rem;padding-left: 1%;"><img class="title-image"
+            src="/img/download.jfif"
+             style="height:40px; width:40px;"> Mailer Daemon</a>
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <div>
+        <div id="mySidenav" class="sidenav" style="display: flex;flex-direction: column;">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/"><i class="fa fa-fw fa-home" style="color:#F4A460"></i> Home</a>
+            <a href="/blog/compose"><i class="fa fa-fw fa-envelope" style="color:#F4A460"></i>Write Blogs</a>
+            <a href="/blog/slow"><i class="fa fa-fw fa-envelope" style="color:#F4A460"></i>Visit Blogs</a>
+            <%if (isloggedin && isloggedin.admin) { %>
+                <a href="/admin/blog/approve"><i class="fa fa-fw fa-user"></i>Approve Blogs</a>
+                <% } %>
+                <%if (isloggedin) { %>
+            <a href="/user"><i class="fa fa-fw fa-user" style="color:#F4A460"></i>User Profile</a>
+            <a href="/logout"><i class="fa fa-fw fa-user" style="color:#F4A460"></i>Logout</a>
+                <% } %>
+                <% if (!isloggedin) { %>
+            <a href="/signin"><i class="fa fa-fw fa-user" style="color:#F4A460"></i>SignUp/LogIn</a>
+            <% } %>
+
+        </div>
+        <div onclick="openNav()" style="margin-right: 5%;padding: 5%;">
+            <button type="button" class="btn btn-lg my-2 my-lg-0 download-button" id="dr"><i
+                    class="fa fa-bars" aria-hidden="true"></i></button>
+        </div>
+    </div>
+
+
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto" id="listt">
+            <li class="nav-item">
+                <a class="nav-link" href="/" id="space">Home</a>
+            </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link" href="/blog/compose" id="space"> Write Blogs</a>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/blog/show" id="space">Visit Blogs</a>
+            </li>
+
+            <%if (isloggedin && isloggedin.admin) { %>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/blog/approve" id="space">Approve Blogs</a>
+                </li>
+                <% } %>
+                <%if (isloggedin) { %>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/user" id="space">User Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout" id="space">Logout</a>
+                    </li>
+                <% } %>
+                <% if (!isloggedin) { %>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/signin" id="space">SignUp/LogIn</a>
+                    </li>
+            <% } %>
+
+        
+        </ul>
+    </div>
+
+</nav>

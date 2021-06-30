@@ -1,0 +1,712 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #9acd32;
+}
+
+
+.header {
+      padding:8px;
+    font-size: 25px;
+	width: 25%;
+	margin-left: 35%;
+	box-shadow: 5px 10px 8px 10px #888888;
+
+    text-align: center;
+}
+
+
+
+.leftcolumn {   
+    float: left;
+	margin-left: 10%;
+    width: 75%;
+}
+
+
+
+
+
+.fakeimg {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+	margin-bottom: 90px;
+}
+
+
+.card {
+     background-color: #faa550;
+     padding: 20px;
+     margin-top: 30px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#input1{
+width: 50px;
+border : none;
+background: none;
+pointer-events: none;
+
+}
+button{
+font-size: 20px;
+margin-top: 10px;
+background-color: grey;
+
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn {   
+        width: 100%;
+        padding: 0;
+		margin-left: 0;
+    }
+	.header{
+	width: 100%;
+	margin-left: 0;
+	
+	}
+}
+     *#title {
+            /* background-color: #ff4c68; */
+          /*  background-color: #9acd32;  */
+			height: 30px;
+            
+        }
+		    .container-fluid {
+            padding: 3% 15%;
+        }
+
+        .download-button {
+            margin: 7% 5% 7% 0%;
+        }
+
+        /* navbar */
+        .navbar:nth-child(1) {
+            padding: 0 0 4.5rem;
+        }
+
+        .navbar-brand {
+            font-family: "Ubuntu";
+            font-size: 2.8rem;
+            font-weight: bold;
+		
+			
+	
+            color: #ffffff;
+        }
+
+        .nav-item {
+            padding: 0 18px;
+        }
+
+        .our_services {
+            font-family: "Montserrat-Bold";
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+			
+        }
+
+        .nav-link {
+            font-size: 1.9rem;
+            font-family: "Montserrat";
+        }
+
+        /* title image */
+        .title-image {
+            border-radius: 100%;
+            width: 40%;
+			float: left;
+			margin-right: 5px;
+        }
+
+        .title-image:hover {
+            height: 300px;
+            border-radius: 30% 30% 30% 30%;
+        }
+		#h{
+		margin-left: 60px;
+		margin-top: -38px;
+		
+		}
+		#tog{
+		float: right;
+		}
+		
+		
+		
+		
+		@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color: white;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.content1{
+ 
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.content1 .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #202020;
+}
+.content1 .p{
+  font-size: 20px;
+  font-weight: 600;
+  color: #202020;
+}
+footer{
+margin-top: 10px;
+  margin-bottom: -20px;
+  width: 103%;
+  background: #faa550;
+  margin-left: -18px;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 10px;
+  
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #5f90a3;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: #f12020;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background:  #9ded91;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: #f12020;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #695a59;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background:  #9ded91;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #000;
+}
+
+@media (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+	width: 110%;
+	margin-left: -30px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+
+/*updated blog css*/
+#mbox {
+  width: 100%;
+  margin: 30px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  padding-top: 10px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+.mabox{
+  width: 20%;
+  margin: 30px auto;
+  margin-bottom: 0;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#mheading {
+  font-family: serif;
+  font-weight: bold;
+  background-color: #faa550;
+  text-align: center;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+#mblog {
+  text-align: center;
+}
+#mblog label {
+  font-family: monospace;
+  color: #faa550;
+  font-size: 17px;
+  float: left;
+}
+textarea[type="text"], input[type="text"]{
+  font-family: Lucida Console;
+  font-size: 13px;
+  border: 1px solid #faa550;
+  border-radius:10px;
+  padding: 10px; 
+  display: inline-block;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%; color: #000000;
+}
+
+textarea[type="text"]:focus, input[type="text"]:focus {
+    outline: none !important;
+}
+.post {
+  margin-bottom: 10px;
+  width:130px;
+  font-weight: bolder;
+  margin-top: 15px;
+  font-size: 17px;
+  background-color: #faa550;
+  padding: 7px;
+  padding-left: 20px;
+  border: none;
+  padding-right: 20px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.post:hover {
+  background-color: rgb(250, 140, 80);
+}
+
+hr.light {
+  border-top: 2px solid #000;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+#likes {
+  margin:0 auto;
+}
+#likebtn, #unlikebtn{
+  background-color: white;
+  color: #000;
+  border:none;
+  outline: none;
+  margin:0 auto;
+  float: right;
+}
+#likebtn:active ,#unlikebtn:active {
+  outline:none;
+  border:none;
+}
+button:focus {
+  outline: none;
+}
+.far {
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 0 auto;
+  cursor: pointer;
+  user-select: none;
+   color: #000;
+}
+.fa {
+  color: #fff; 
+  margin: 0 auto;
+  padding: 0 auto;
+  cursor: pointer;
+  user-select: none;
+}
+.border-heart{
+  color: #000;
+}
+.selected-heart{
+  color: red;
+}
+.far:hover {
+  color:red;
+}
+.pAn:hover .fa-chevron-left:before {
+   content: "\f137";
+}
+.pAn:hover .fa-chevron-right:before {
+   content: "\f138";
+}
+.pAn {
+   text-align:center; 
+        width:100%; 
+}
+.pAn i {
+  font-size: 40px;
+}
+#name_date {
+  color: #000;
+  text-align: left; 
+  font-size: 13px;
+}
+#mtitle {
+  font-size: 17px;
+  font-weight: bold; 
+  text-align: left; 
+  color: #000;
+}
+#mcontent {
+  font-size: 13px;  
+  color: #000; 
+  text-align: left;
+}
+.likes {
+  float: left; 
+  color: #000; 
+  font-size: 11px; 
+  padding: 10px;
+}
+
+/*tablets*/
+@media (max-width: 768px){
+  hr.light {
+  padding-bottom: 0.1rem;
+}
+#mdelete, #mapprove  {
+  width:80px;
+  font-size: 12px;
+}
+#complete {
+   padding-right: 2px;
+    padding-left: 2px;
+}
+#mcomplete {
+   padding-right: 36px;
+    padding-left: 36px;
+}
+#mpost {
+  width:90px;
+  font-size: 16px;
+}
+#mheading h1 {
+  font-size: 20px;
+}
+#mbox {
+  width: 85%;
+}
+.mabox {
+  width: 30%;
+}
+#mheading {
+  padding-top: 0.9%;
+  padding-bottom: 0.9%;
+}
+.pAn i {
+  font-size: 30px;
+  text-align: center;
+}
+}
+
+/*mobile*/
+@media (max-width: 576px){
+  #complete {
+   padding-right: 2px;
+    padding-left: 2px;
+}
+#mdelete, #mapprove  {
+  width:70px;
+  font-size: 11px;
+}
+#mcomplete {
+   padding-right: 32px;
+    padding-left: 32px;
+}
+#mheading h1 {
+  font-size: 20px;
+}
+#mbox {
+  width: 100%;
+}
+.mabox{
+  width: 30%;
+}
+#mheading {
+  padding-top: 0.9%;
+  padding-bottom: 0.9%;
+}
+hr.light {
+  padding-bottom: 0.2rem;
+}
+.like_c {
+  padding-bottom: 2px;
+}
+.far , .selected-heart {
+  font-size: 15px;
+}
+.pAn {
+   text-align:center; 
+   width:100%;
+   padding-left: 7px; 
+   padding-right: 7px;
+}
+
+.pAn i {
+  font-size: 20px;
+  text-align: center;
+}
+#name_date { 
+  font-size: 10px;
+}
+#mtitle {
+  font-size: 15px;
+}
+#mcontent {
+  font-size: 11px;  
+}
+.likes { 
+  font-size: 10px; 
+  padding: 10px;
+}
+} 
+.mapprove ,.mdelete {
+  outline: none;
+  outline: 0;
+  margin-bottom: 10px;
+  width:130px;
+  font-weight: bolder;
+  margin-top: 15px;
+  font-size: 17px;
+  background-color: #faa550;
+  padding: 7px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.mapprove:hover ,.mdelete:hover {
+  background-color: rgb(250, 140, 80);
+}
+
+
+
+  .sidenav {
+            height: 100%;
+            /* 100% Full-height */
+            width: 0;
+            /* 0 width - change this with JavaScript */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Stay on top */
+            top: 0;
+            /* Stay at the top */
+            left: 0;
+            background-color: #111;
+            /* Black*/
+            overflow-x: hidden;
+            /* Disable horizontal scroll */
+            padding-top: 60px;
+            /* Place content 60px from the top */
+            transition: 0.5s;
+            /* 0.5 second transition effect to slide in the sidenav */
+        }
+
+        /* The navigation menu links */
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        /* Position and style the close button (top right corner) */
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+        #main {
+            transition: margin-left .5s;
+            padding: 20px;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+		
+		
+.fa fa-bars{
+background-color: black;
+color:black;
+}
+.btn btn-lg my-2 my-lg-0 download-button{
+background-color: green;
+padding: 5px;
+color:black;
+margin-right: -800px;
+
+}
+#dr {
+padding: 5px;
+margin-right:-1000px;
+z-index: 1;
+color:black;
+
+display:none;
+
+}
+@media (max-width: 1000px)
+{
+#dr{
+margin-right: 0px;
+}
+}
+
+
+#navbarTogglerDemo02{
+font-size: 20px;
+justify-content: space-around;
+margin-right: 20px;
+padding-left: 3%;
+
+
+}		
+#space{
+margin-right: 3px;
+}
+
+@media (max-width: 950px)
+{
+#navbarTogglerDemo02{
+display:none;
+
+}
+#dr{
+display: block;
+}
+
+}
+
+@media (max-width: 990px)
+{
+#uu {
+display: none;
+
+}
+}

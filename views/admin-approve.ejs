@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <link href="/css/show.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+ <section id="title">
+       <!-- <div class="container-fluid" style="padding-bottom: 40px;">
+
+        </div>-->
+  <!--  <div class="container-fluid" style="height: 300px;margin-top: 40px;padding-right: 0%;margin-right: 0%;">--->
+            <!-- navbar -->
+            <%- include('partials/navbar'); %>
+
+            <!-- title -->
+           
+        
+
+    </section>
+
+    <div class="mabox" id="mheading">
+      <h1> BLOG </h1>
+   </div>
+  <div class="container-fluid" id="complete">
+   <div class="row align-items-center">
+      <div class="col-1 pAn">
+          <i class="fa fa-chevron-left" onclick="plusSlides(1)"></i>
+      </div>
+        <div class="col-10">
+   <div id="mbox">
+    <div class="container-fluid" id="mcomplete">
+            <div id="mblog">
+             <% newitems.forEach(function(item) { %>
+            <div class="mySlides">
+             <div class="row">
+        <div class="col-12">
+          <p id="name_date"><%= item.name %> &#9679;  <%= item.date %> &#9679;  <%= item.time %> </p></div> </div>
+          <div class="row">
+          <div class="col-12">
+          <h2 id="mtitle"> <%=  item.title %> </h2> </div> </div>
+          <div class="row">
+          <div class="col-12">
+          <p id="mcontent"> <%=  item.content %> </p> </div> </div> 
+          <div class="row">
+          <div class="col-12">
+          <hr class="light"> </div> </div>
+          <div class="row">
+          <div class="col-12">
+           <form action="/admin/approve" method="post">
+              <button class="mapprove" id="mapprove" name="approve" style="margin-right: 5px;" value="<%=item._id%>" formaction="/admin/approve">Approve</button>
+              <button class="mdelete" id="mdelete" name="delete" style="margin-left: 5px;" value="<%=item._id%>" formaction="/admin/delete">Delete</button></form>
+           </div> 
+          </div></div>
+          <% }) %>
+      </div>
+  
+          </div>
+        </div>
+     </div>
+     <div class="col-1 pAn">
+          <i class="fa fa-chevron-right" onclick="plusSlides(1)" style="float: right;" ></i>
+      </div>
+   </div>
+  </div>
+
+<script>   
+
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slides[slideIndex-1].style.display = "block"; 
+  }
+  </script>
+		
+
+    <script>
+        function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
+
+            /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+                document.body.style.backgroundColor = "white";
+            }
+    </script>
+
+</body>
+
+
+</html>
