@@ -1,81 +1,160 @@
-<!DOCTYPE html>
-<html>
+ <!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>LOST AND FOUND</title>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost | Found page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="css/found.css">
-	<style>
-	body{
-	background-image: url(0.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	  background-color:rgb(0,0,0,0.6);
-	}
-	</style>
 </head>
+
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3e400a;">
+    <div class="container-fluid">
+      
+      <img src="md logo.png" class="navbar-brand" id="brand-logo" alt="">
+       <a class="navbar-brand" href="#">Mailer Daemon</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  mb-2" style="margin-left: auto;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+        </ul>
 
-       
-        <div class="login">
-            <div class="wrap">
-                <!-- TOGGLE -->
-                <div id="toggle-wrap">
-                    <div id="toggle-terms">
-                        <div id="cross">
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-               
-          
+      </div>
+    </div>
+  </nav>
 
+
+
+
+  <div class="lost-section">
+    <div class="row">
+      <div class="col-lg-8 col-md-6">
+        <div class="form-section">
+
+
+          <div class="container">
       
 
-               
-                <div class="content">
-                   
-                    <div id="slideshow">
-                        <div class="one">
-                           
-                        <br><br><br><br><br><br>   <h1><span>LOST AND FOUND</span></h1>
-						
-                        </div>
-                        <div class="two">
-                         
-                                                  <br><br><br><br><br> <br> <p>Provide the complete detail of object lost<p>
-                        </div>
-						
-                       
+
+
+        
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title" id="center">
+                  Form for Lost / Found Item
+                </div>
+                <hr>
+
+                <form action="">
+
+
+                  <div class="row">
+                    <div class="col-lg-5">
+                      Type
                     </div>
-                </div>
-               
-                <div class="user">
-                   
-                    <div class="form-wrap">
-                      
-                    	<div class="tabs-content">
-                          
-                    		<div id="login-tab-content" class="active">
-                    			<form class="login-form" action="" method="post">
-                    				<input type="text" class="input" id="user_login" autocomplete="off" placeholder="Name">
-									<input type="text" class="input" id="user_login" autocomplete="off" placeholder="Admission Number">
-									<input type="text" class="input" id="user_login" autocomplete="off" placeholder="Object Lost">
-									<input type="text" class="input" id="user_login" autocomplete="off" placeholder="Contact Number">
-                    				
-                    			
-                    				<input type="submit" class="button" value="Submit">
-                    			</form>
-                    		
-                    		</div>
-                         
-                    		
-                    	</div>
-                	</div>
-                </div>
+                    <div class="col-lg-7">
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Lost
+                            </label>
+                          </div>
+
+                        </div>
+                        <div class="col">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Found
+                            </label>
+                          </div>
+
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div> <br>
+
+                  <div class="row">
+                    <div class="col-lg-3" id="left-text" >
+                      <h6>Name</h6>
+                    </div>
+                    <div class="col-lg-9">
+                      <input type="text" class="form-control" required>
+                    </div>
+                  </div> <br>
+
+
+                  <div class="row">
+                    <div class="col-lg-3" id="left-text" >
+                      <h6> Admission Number</h6>
+                    </div>
+                    <div class="col-lg-9">
+                      <input type="text" class="form-control" required>
+                    </div>
+                  </div> <br>
+                  <div class="row">
+                    <div class="col-lg-3" id="left-text" >
+                      <h6> Object Lost / Found</h6>
+                    </div>
+                    <div class="col-lg-9">
+                      <input type="text" class="form-control" required>
+                    </div>
+                  </div><br>
+                  <div class="row">
+                    <div class="col-lg-3" id="left-text" >
+                      <h6> Place </h6>
+                    </div>
+                    <div class="col-lg-9">
+                      <input type="tel" class="form-control" required>
+                    </div>
+                  </div><br>
+                  <div class="row">
+                    <div class="col-lg-3" id="left-text"  >
+                      <h6> Contact Number</h6>
+                    </div>
+                    <div class="col-lg-9">
+                      <input type="tel" class="form-control" required>
+                    </div>
+                  </div>
+                  <div class="row">
+
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-9" id="submit-btn">
+                      <button id="reset" type="reset" class="btn btn-danger">Reset</button>
+                      <button id="submit" type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                  </div>
+              </div>
             </div>
+            </form>
+          </div>
+        </div></div>  
+        <div class="col-lg-4 col-md-6" style=" padding-right: 2rem; padding-left: 3rem;">
+          <img class="left-image" src="/img/search.png" alt="">
+          <h4>Welcome to lost and found page</h4>
+          <h4>Here you can find out your lost things.</h4>
+          <h4>And</h3>
+            <h4>If you got anything that doesn't belong to you</h4>
+            <h4>You can also mention here...</h4>
         </div>
+      </div>
+    </div>
+  </div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/found.js"></script>
