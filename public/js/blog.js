@@ -29,7 +29,6 @@ function open1(current){                                                        
 }
 function closeme(){                                                                         //closing function for modals
     document.getElementById("container1").classList.add("hide");
-    alert("sonali");
 }
 
 
