@@ -148,7 +148,11 @@ app.get("/user",function(req,res){
 
 app.get("/blog/show",isLoggedIn,function(req,res){
 	Approved.find({},function(err,items){
-     res.render("show",{newshow:items,user:req.user.likedposts,admin:req.user.admin,isloggedin:req.user});
+     if(req.user) {
+        res.render("show",{newshow:items,user:req.user.likedposts,admin:req.user.admin,isloggedin:req.user});
+    }
+    else 
+     res.render("show",{newshow:items,isloggedin:null});
 	});
     
 });
