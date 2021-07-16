@@ -146,7 +146,7 @@ app.get("/user",function(req,res){
     res.render("user",{isloggedin:req.user});
 });
 
-app.get("/blog/show",isLoggedIn,function(req,res){
+app.get("/blog/show",function(req,res){
 	Approved.find({},function(err,items){
      if(req.user) {
         res.render("show",{newshow:items,user:req.user.likedposts,admin:req.user.admin,isloggedin:req.user});
