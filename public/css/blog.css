@@ -1,0 +1,440 @@
+body {
+    background: linear-gradient(to right, #9acd32, #9acd32);
+  }
+  .title {
+    font-family: fantasy;
+    font-size: 50px;
+    border: 0.1px black;
+    background-color: #f4a460;
+  }
+  .header {
+    display: flex;
+    align-items: flex-end;
+    padding: 70px;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .card-body {
+    background: #f4a460;
+  }
+  .card-text {
+    color: black;
+  }
+  .card-title {
+    color: black;
+  }
+  .card {
+    margin: 0 8px;
+    box-shadow: 2px 2px 4px gray;
+  }
+  .main-carousel {
+    margin-top: 1vh;
+  }
+  
+  .card-body {
+    background: #f4a460;
+  }
+  .card-text {
+    color: black;
+  }
+  .card-title {
+    color: black;
+    margin-left: 10px;
+  }
+  
+  /*card hovering*/
+  /*.card{
+      border-radius: 5px;
+      box-shadow: 2px 2px 4px gray;
+      border: 200px;
+      z-index: 0;
+      transition: 0.2s all;    
+  }
+  .card:hover{
+      z-index: 1;
+      box-shadow: 0 8px 50px rgba(0,0,0,0.2);
+      transform:scale(1.05);
+  }*/
+  
+  /* MOdal edits */
+  .modal-container1 {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    /* left:0; */
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .modal1 {
+    margin: 20vh 10vw;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    height: 50vh;
+  }
+  
+  .show {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  
+  /*button*/
+  .card-button {
+    float: center;
+    padding: 6px;
+    color: green;
+    font-size: medium;
+    background: #f4a460;
+    border-radius: 10px;
+  }
+  .card-button:hover {
+    color: green;
+    background-color: #9acd32;
+  }
+  .like-button {
+    float: center;
+    padding: 6px;
+    color: green;
+    font-size: medium;
+    background: #f4a460;
+    border-radius: 10px;
+    float: right;
+  }
+  .like-button:hover {
+    color: green;
+    background-color: #9acd32;
+  }
+  .liked {
+    background-color: #E26A9D;
+  }
+
+  
+
+  /* Navbar css */
+  @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap');
+  *{
+  margin: 0;
+  padding: 0;
+  
+  }
+  body{
+  background-color: #9acd32;
+  margin: 0;
+  overflow-x:hidden;
+  
+  }
+  #box{
+  width: 60%;
+  
+  height: 90%;
+  background-color: #faa550;
+  
+  margin: auto;
+  margin-top: 5%;
+  
+  }
+  #inp{
+  
+  width: 95%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-left: 8px;
+  }
+  
+  #hh{
+  margin-top: 40px;
+  
+  
+  }
+  #myfile{
+  margin-left: 15px;
+  font-size: 20px;
+  
+  
+  }
+  #post{
+  float: right;
+  border: 1px solid grey;
+  padding: 4px;
+  background-color: #9ded91;
+  cursor: pointer;
+  margin-right: 30px;
+  
+  }
+  #ii{
+  font-size: 18px;
+  margin-left: 5px;
+  width: 95%;
+  
+  }
+   *#title {
+              /* background-color: #ff4c68; */
+              background-color: #9acd32;
+        height: 60px;
+              color: #ffffff;
+          }
+          .container-fluid {
+              padding: 3% 15%;
+          }
+  
+          .download-button {
+              margin: 7% 5% 7% 0%;
+          }
+  
+          /* navbar */
+          .navbar:nth-child(1) {
+              padding: 0 0 4.5rem;
+          }
+  
+          .navbar-brand {
+              font-family: "Ubuntu";
+              font-size: 2.8rem;
+              font-weight: bold;
+      
+        
+    
+              color: #ffffff;
+          }
+  
+          .nav-item {
+              padding: 0 18px;
+          }
+  
+          .our_services {
+              font-family: "Montserrat-Bold";
+              font-size: 2.5rem;
+              font-weight: bold;
+              display: flex;
+              justify-content: center;
+        
+          }
+  
+          .nav-link {
+              font-size: 1.9rem;
+              font-family: "Montserrat";
+          }
+  
+          /* title image */
+          .title-image {
+              border-radius: 100%;
+              width: 40%;
+        margin-right: 5px;
+        float: left;
+          }
+  
+          .title-image:hover {
+              height: 300px;
+              border-radius: 30% 30% 30% 30%;
+          }
+      #h{
+      margin-left: 60px;
+      margin-top: -38px;
+      
+      }
+      #tog{
+      float: right;
+      }
+  #head{
+  
+   box-shadow: 5px 10px 8px 10px #888888;
+   width: 200px;
+  text-align: center;
+  margin-top: 3%;
+  margin-left: 42%;
+  }
+  
+  
+  
+  @media (max-width: 768px){
+  #head{
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  text-align: center;
+  margin-left: 0;
+  margin-top: 50px;
+  
+  }
+  }
+  @media (max-width: 1000px){
+  #brand{
+  padding-left: 0;
+  float: left;
+  }
+  
+  #navv{
+  height: 300px;
+  }
+  
+  #box {
+  height: 590px;
+  width: 90%;
+  
+  
+  }
+  #inp{
+  
+  padding-bottom: 16px;
+  font-size: 15px;
+  }
+  #hh{
+  font-size: 20px;
+  margin-right:0;
+  
+  }
+  #post{
+  font-size: 30px;
+  }
+  #myfile{
+  font-size: 20px;
+  }
+  }
+  @media (max-width: 1000px)
+  {
+  #ii{
+  width: 96%;
+  }
+  
+  }
+  @media (min-width: 1001px) and (max-width: 1200px)
+  {
+  #ii{
+  width: 96%;
+  }
+  
+  }
+  
+  
+      
+     .sidenav {
+              height: 100%;
+              /* 100% Full-height */
+              width: 0;
+              /* 0 width - change this with JavaScript */
+              position: fixed;
+              /* Stay in place */
+              z-index: 1;
+              /* Stay on top */
+              top: 0;
+              /* Stay at the top */
+              left: 0;
+              background-color: #111;
+              /* Black*/
+              overflow-x: hidden;
+              /* Disable horizontal scroll */
+              padding-top: 60px;
+              /* Place content 60px from the top */
+              transition: 0.5s;
+              /* 0.5 second transition effect to slide in the sidenav */
+          }
+  
+          /* The navigation menu links */
+          .sidenav a {
+              padding: 8px 8px 8px 32px;
+              text-decoration: none;
+              font-size: 25px;
+              color: #818181;
+              display: block;
+              transition: 0.3s;
+          }
+  
+          /* When you mouse over the navigation links, change their color */
+          .sidenav a:hover {
+              color: #f1f1f1;
+          }
+  
+          /* Position and style the close button (top right corner) */
+          .sidenav .closebtn {
+              position: absolute;
+              top: 0;
+              right: 25px;
+              font-size: 36px;
+              margin-left: 50px;
+          }
+  
+          /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+          #main {
+              transition: margin-left .5s;
+              padding: 20px;
+          }
+  
+          /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+          @media screen and (max-height: 450px) {
+              .sidenav {
+                  padding-top: 15px;
+              }
+  
+              .sidenav a {
+                  font-size: 18px;
+              }
+          }
+      
+      
+  .fa fa-bars{
+  background-color: black;
+  color:black;
+  }
+  .btn btn-lg my-2 my-lg-0 download-button{
+  background-color: green;
+  padding: 5px;
+  color:black;
+  margin-right: -800px;
+  
+  }
+  #dr {
+  padding: 5px;
+  margin-right:-1000px;
+  
+  color:black;
+  display: none;
+  
+  }
+  @media (max-width: 1100px)
+  {
+  #dr{
+  margin-right: 0px;
+  }
+  }
+  
+  
+  #navbarTogglerDemo02{
+  font-size: 20px;
+  justify-content: space-around;
+  margin-right: 20px;
+  padding-left: 3%;
+  
+  
+  }		
+  #space{
+  margin-right: 3px;
+  }
+  
+  @media (max-width: 950px)
+  {
+  #navbarTogglerDemo02{
+  display:none;
+  
+  }
+  #dr{
+  display: block;
+  }
+  
+  }
+  
+  @media (max-width: 990px)
+  {
+  #uu {
+  display: none;
+  
+  }
+  }
